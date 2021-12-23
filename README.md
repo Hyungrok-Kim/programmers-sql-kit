@@ -28,3 +28,20 @@ SELECT ANIMAL_ID, NAME from ANIMAL_INS ORDER BY ANIMAL_ID
 ```SQL
 SELECT ANIMAL_ID, NAME, DATETIME FROM ANIMAL_INS ORDER BY NAME, DATETIME DESC
 ```
+## SUM, MAX, MIN
+> 최댓갑 구하기
+```SQL
+SELECT MAX(DATETIME) FROM ANIMAL_INS
+```
+> 최솟값 구하기
+```SQL
+SELECT MIN(DAtETIME) FROM ANIMAL_INS
+```
+> 동물 수 구하기
+```SQL
+SELECT count(*) from ANIMAL_INS
+```
+> 중복 제거하기
+```SQL
+SELECT count(distinct name) from animal_ins
+```
