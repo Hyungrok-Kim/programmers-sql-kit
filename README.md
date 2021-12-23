@@ -43,5 +43,5 @@ SELECT count(*) from ANIMAL_INS
 ```
 > 중복 제거하기
 ```SQL
-SELECT count(distinct name) from animal_ins
+SELECT count(distinct name) FROM ANIMAL_INS
 ```
