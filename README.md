@@ -69,5 +69,12 @@ order by HOUR(DATETIME)
 
 > 입양 시각 구하기(2)
 ```SQL
+SET @HOUR = -1;
+
+SELECT 
+(@HOUR := @HOUR + 1) AS HOUR,
+(SELECT count(*) FROM ANIMAL_OUTS WHERE @HOUR = HOUR(datetime)) AS COUNT
+FROM ANIMAL_OUTS
+where @HOUR < 23
 ```
 
