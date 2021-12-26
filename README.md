@@ -45,3 +45,25 @@ SELECT count(*) from ANIMAL_INS
 ```SQL
 SELECT count(distinct name) FROM ANIMAL_INS
 ```
+
+## GROUP BY
+> 고양이와 개는 몇 마리 있을까?
+```SQL
+SELECT animal_type, count(animal_type) FROM ANIMAL_INS GROUP BY animal_type order by animal_type
+```
+
+> 동명 동물 수 찾기
+```SQL
+SELECT name, count(name) FROM ANIMAL_INS GROUP BY name having count(name) >= 2 order by name
+```
+
+
+> 입양 시각 구하기(1)
+```SQL
+```
+
+
+> 입양 시각 구하기(2)
+```SQL
+```
+
