@@ -60,6 +60,10 @@ SELECT name, count(name) FROM ANIMAL_INS GROUP BY name having count(name) >= 2 o
 
 > 입양 시각 구하기(1)
 ```SQL
+SELECT HOUR(DATETIME) AS HOUR, count(*) AS COUNT 
+FROM ANIMAL_OUTS WHERE HOUR(DATETIME) BETWEEN 9 and 19
+group by HOUR(DATETIME)
+order by HOUR(DATETIME)
 ```
 
 
