@@ -87,3 +87,13 @@ SELECT animal_id FROM ANIMAL_INS WHERE name is null
 ```SQL
 SELECT animal_id FROM ANIMAL_INS WHERE name is not null order by animal_id
 ```
+
+> NULL 처리하기
+```SQL
+select 
+ANIMAL_TYPE,
+IFNULL(name, "No name") AS NAME,
+SEX_UPON_INTAKE
+FROM animal_ins
+order by animal_id
+```
