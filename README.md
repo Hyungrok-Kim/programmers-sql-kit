@@ -81,5 +81,5 @@ where @HOUR < 23
 ## IS NULL
 > 이름이 없는 동물의 아이디
 ```SQL
-SELECT animal_id FROM ANIMAL_INS where name is null
+SELECT animal_id FROM ANIMAL_INS WHERE name is null
 ```
