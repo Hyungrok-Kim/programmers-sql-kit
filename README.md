@@ -78,3 +78,8 @@ FROM ANIMAL_OUTS
 where @HOUR < 23
 ```
 
+## IS NULL
+> 이름이 없는 동물의 아이디
+```SQL
+SELECT animal_id from animal_ins where name is null
+```
