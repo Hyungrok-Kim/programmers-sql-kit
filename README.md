@@ -83,3 +83,7 @@ where @HOUR < 23
 ```SQL
 SELECT animal_id FROM ANIMAL_INS WHERE name is null
 ```
+> 이름이 있는 동물의 아이디
+```SQL
+SELECT animal_id from animal_ins where name is not null order by animal_id
+```
