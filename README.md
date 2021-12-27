@@ -90,10 +90,10 @@ SELECT animal_id FROM ANIMAL_INS WHERE name is not null order by animal_id
 
 > NULL 처리하기
 ```SQL
-select 
+SELECT
 ANIMAL_TYPE,
 IFNULL(name, "No name") AS NAME,
 SEX_UPON_INTAKE
-FROM animal_ins
+FROM ANIMAL_INS
 order by animal_id
 ```
