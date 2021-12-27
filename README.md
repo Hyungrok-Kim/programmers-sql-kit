@@ -95,5 +95,5 @@ ANIMAL_TYPE,
 IFNULL(name, "No name") AS NAME,
 SEX_UPON_INTAKE
 FROM ANIMAL_INS
-order by animal_id
+ORDER BY animal_id
 ```
