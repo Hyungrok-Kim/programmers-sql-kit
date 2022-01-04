@@ -109,7 +109,7 @@ NOT IN (select animal_id from animal_ins)
 > 있었는데요 없었습니다
 ```SQL
 SELECT A.ANIMAL_ID, A.NAME 
-from ANIMAL_INS A
+FROM ANIMAL_INS A
 JOIN ANIMAL_OUTS B
 ON (A.ANIMAL_ID = B.ANIMAL_ID)
 WHERE A.DATETIME > B.DATETIME 
