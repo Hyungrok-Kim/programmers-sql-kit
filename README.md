@@ -107,5 +107,13 @@ WHERE animal_id
 NOT IN (select animal_id from animal_ins)
 ```
 > 있었는데요 없었습니다
+```SQL
+SELECT A.ANIMAL_ID, A.NAME 
+from ANIMAL_INS A
+JOIN ANIMAL_OUTS B
+ON (A.ANIMAL_ID = B.ANIMAL_ID)
+WHERE A.DATETIME > B.DATETIME 
+ORDER BY A.DATETIME
+```
 > 오랜 기간 보호한 동물(1)
 > 보호소에서 중성화한 동물
