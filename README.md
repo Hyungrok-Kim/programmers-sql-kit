@@ -97,3 +97,15 @@ SEX_UPON_INTAKE
 FROM ANIMAL_INS
 ORDER BY animal_id
 ```
+
+## JOIN
+> 없어진 기록 찾기
+```SQL
+SELECT ANIMAL_ID, NAME
+from animal_outs 
+where animal_id 
+not in (select animal_id from animal_ins)
+```
+> 있었는데요 없었습니다
+> 오랜 기간 보호한 동물(1)
+> 보호소에서 중성화한 동물
