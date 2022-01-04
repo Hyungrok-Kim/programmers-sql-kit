@@ -102,9 +102,9 @@ ORDER BY animal_id
 > 없어진 기록 찾기
 ```SQL
 SELECT ANIMAL_ID, NAME
-from animal_outs 
-where animal_id 
-not in (select animal_id from animal_ins)
+FROM animal_outs 
+WHERE animal_id 
+NOT IN (select animal_id from animal_ins)
 ```
 > 있었는데요 없었습니다
 > 오랜 기간 보호한 동물(1)
