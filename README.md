@@ -143,3 +143,12 @@ WHERE NAME LIKE '%el%' AND ANIMAL_TYPE = 'Dog'
 ORDER BY name
 ```
 > 중성화 여부 파악하기
+```SQL
+SELECT ANIMAL_ID, NAME, 
+CASE 
+    WHEN SEX_UPON_INTAKE LIKE '%Spayed%' OR SEX_UPON_INTAKE LIKE '%Neutered%' then 'O'
+    else 'X' 
+END AS '중성화'
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID
+```
