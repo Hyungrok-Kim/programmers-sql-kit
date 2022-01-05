@@ -137,4 +137,9 @@ SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE FROM ANIMAL_INS
 WHERE NAME IN ('Lucy', 'Ella', 'Pickle', 'Sabrina', 'Mitty')
 ```
 > 이름에 el들어가는 동물 찾기
+```SQL
+SELECT ANIMAL_ID, NAME FROM ANIMAL_INS 
+WHERE NAME LIKE '%el%' AND ANIMAL_TYPE = 'Dog'
+ORDER BY name
+```
 > 중성화 여부 파악하기
