@@ -129,3 +129,8 @@ JOIN ANIMAL_INS B ON (A.ANIMAL_ID = B.ANIMAL_ID)
 WHERE NOT A.SEX_UPON_OUTCOME = B.SEX_UPON_INTAKE
 ORDER BY A.ANIMAL_ID
 ```
+
+## String, Date
+> 루시와 엘라 찾기
+> 이름에 el들어가는 동물 찾기
+> 중성화 여부 파악하기
