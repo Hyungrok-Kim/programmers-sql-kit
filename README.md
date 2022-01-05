@@ -132,5 +132,9 @@ ORDER BY A.ANIMAL_ID
 
 ## String, Date
 > 루시와 엘라 찾기
+```SQL
+SELECT ANIMAL_ID, NAME, SEX_UPON_INTAKE FROM ANIMAL_INS
+WHERE NAME IN ('Lucy', 'Ella', 'Pickle', 'Sabrina', 'Mitty')
+```
 > 이름에 el들어가는 동물 찾기
 > 중성화 여부 파악하기
