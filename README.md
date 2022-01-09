@@ -4,7 +4,7 @@ SQL kit in programmers(MySQL)
 ## SELECT
 > 모든 레코드 조회하기
 ```SQL
-SELECT * from ANIMAL_INS order by ANIMAL_ID
+SELECT * FROM ANIMAL_INS order by ANIMAL_ID
 ```
 > 역순 정렬하기
 ```SQL
