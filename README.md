@@ -39,7 +39,7 @@ SELECT MIN(DAtETIME) FROM ANIMAL_INS
 ```
 > 동물 수 구하기
 ```SQL
-SELECT count(*) from ANIMAL_INS
+SELECT count(*) FROM ANIMAL_INS
 ```
 > 중복 제거하기
 ```SQL
