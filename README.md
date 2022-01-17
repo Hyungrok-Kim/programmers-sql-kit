@@ -54,7 +54,7 @@ SELECT animal_type, count(animal_type) FROM ANIMAL_INS GROUP BY animal_type ORDE
 
 > 동명 동물 수 찾기
 ```SQL
-SELECT name, count(name) FROM ANIMAL_INS GROUP BY name having count(name) >= 2 order by name
+SELECT name, count(name) FROM ANIMAL_INS GROUP BY name having count(name) >= 2 ORDER BY name
 ```
 
 
