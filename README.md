@@ -85,7 +85,7 @@ SELECT animal_id FROM ANIMAL_INS WHERE name is null
 ```
 > 이름이 있는 동물의 아이디
 ```SQL
-SELECT animal_id FROM ANIMAL_INS WHERE name is not null order by animal_id
+SELECT animal_id FROM ANIMAL_INS WHERE name is not null ORDER BY animal_id
 ```
 
 > NULL 처리하기
