@@ -140,7 +140,7 @@ WHERE NAME IN ('Lucy', 'Ella', 'Pickle', 'Sabrina', 'Mitty')
 ```SQL
 SELECT ANIMAL_ID, NAME FROM ANIMAL_INS 
 WHERE NAME LIKE '%el%' AND ANIMAL_TYPE = 'Dog'
-ORDER BY name
+ORDER BY NAME
 ```
 > 중성화 여부 파악하기
 ```SQL
