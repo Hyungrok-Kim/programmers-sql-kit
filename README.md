@@ -49,7 +49,7 @@ SELECT COUNT(DISTINCT NAME) FROM ANIMAL_INS
 ## GROUP BY
 > 고양이와 개는 몇 마리 있을까?
 ```SQL
-SELECT ANIMAL_TYPE, count(animal_type) FROM ANIMAL_INS GROUP BY animal_type ORDER BY animal_type
+SELECT ANIMAL_TYPE, COUNT(ANIMAL_TYPE) FROM ANIMAL_INS GROUP BY animal_type ORDER BY animal_type
 ```
 
 > 동명 동물 수 찾기
