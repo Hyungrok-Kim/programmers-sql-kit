@@ -102,7 +102,7 @@ ORDER BY ANIMAL_ID
 > 없어진 기록 찾기
 ```SQL
 SELECT ANIMAL_ID, NAME
-FROM animal_outs 
+FROM ANIMAL_OUTS 
 WHERE animal_id 
 NOT IN (select animal_id from animal_ins)
 ```
