@@ -104,7 +104,7 @@ ORDER BY ANIMAL_ID
 SELECT ANIMAL_ID, NAME
 FROM ANIMAL_OUTS 
 WHERE ANIMAL_ID 
-NOT IN (select animal_id from animal_ins)
+NOT IN (SELECT animal_id from animal_ins)
 ```
 > 있었는데요 없었습니다
 ```SQL
