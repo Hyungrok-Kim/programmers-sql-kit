@@ -1,5 +1,5 @@
 # Programmers-SQL-Kit
-SQL kit in Programmers(MySQL)
+SQL Kit In Programmers(MySQL)
 
 ## SELECT
 > 모든 레코드 조회하기
